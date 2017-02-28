@@ -1,0 +1,24 @@
+<h1>Show (Profile)</h1> 
+
+
+
+<h1>Now viewing <%= @user.username %>'s profile</h1>
+
+
+<%= image_tag @user.avatar.url(:meelo) %>
+
+
+<%= @user.fname+" "+@user.lname%>
+
+<br>
+
+<%= @user.email %>
+
+<% if flash[:success] %>
+    <div class="success"><%= flash[:success] %></div>
+  <% end %>
+
+
+
+
+

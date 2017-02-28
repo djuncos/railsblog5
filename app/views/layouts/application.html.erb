@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsBlog5</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+  <body>
+  	<%= render 'layouts/header' %>
+
+    <div id="separator_bar"></div>
+
+   <div class="layout_container"> <%= yield %> </div>
+
+    
+  </body>
+</html>

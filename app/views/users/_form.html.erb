@@ -1,0 +1,53 @@
+
+
+<%= form_for @user, html: { multipart: true } do |f| %>
+  
+<div class="sign_up_container">
+
+  <div class="field">
+    <%= f.label :fname, "First Name" %>
+    <%= f.text_field :fname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lname, "Last Name" %>
+    <%= f.text_field :lname %>
+  </div>
+
+  <div class="field">
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+  </div>
+
+
+   <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email_confirmation %>
+    <%= f.text_field :email_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.text_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :avatar, "Profile Pic" %>
+    <%= f.file_field :avatar, class: "btn btn-primary"%>
+  </div>
+
+  <div class="button_container"><div class="actions right_button">
+    <%= f.submit class: "btn btn-primary"%>
+  </div></div>
+<% end %>
+
+</div>

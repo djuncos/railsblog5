@@ -1,0 +1,192 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require_bootstrap.min
+ *= require_mdb.min
+ */
+
+
+.layout_container{
+
+
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5px;
+	/*outline: solid orange 2px;*/
+
+
+}
+
+#separator_bar{
+
+	margin-top: 5px;
+	width: 100%;
+	height: 20px;
+	/*outline: solid black 2px;*/
+
+}
+
+.sign_up_container{
+
+	
+	/*outline: solid black 2px;*/
+
+
+
+}
+
+
+.back_edit{
+
+
+	height: auto;
+	width: auto;
+	/*outline: solid green 2px;*/
+	float: right;
+
+
+}
+
+.button_container{
+
+
+	width: auto;
+	height: auto;
+	/*outline: solid black 2px;*/
+	float: right;
+	align-self: flex-end;
+
+
+}
+
+
+.right_button{
+
+
+	float: right;
+
+
+
+}
+
+
+
+
+
+
+.white_text{
+
+	color: white;
+
+
+}
+
+
+.feed_post{
+
+
+
+	width: 75px;
+	height: 75px;
+	/*overflow: hidden;*/
+	/*align-content: center;*/
+	border-radius: 10px;
+	/*outline: solid 2px green;*/
+	float: left;
+	margin-left: 10%;
+	
+	
+
+
+}
+
+.second{
+
+
+	
+	width: 100%
+	height: 80px;
+	/*outline: solid blue 2px;*/
+	display: block;
+	clear: left;
+
+}
+
+li{
+
+	color: transparent;
+
+
+}
+
+.post_username{
+
+	margin-left: 10px;
+	position: relative;
+	font-size: 15px;
+	
+
+
+}
+
+
+.post_title{
+
+
+	clear: left;
+	position: absolute;
+	margin-left: 10px;
+	font-size: 20px;
+	color: slategray! important;
+
+
+
+}
+
+.main_div{
+
+background-color: lightblue;
+size: 80% 90%;
+position: absolute;
+z-index: 2;
+
+
+}
+
+
+.post_container{
+
+	margin: 0 auto;
+	width: 80%;
+	/*outline: solid black 2px;*/
+
+
+}
+
+.post_body{
+
+	
+	font-size: 15px;
+	text-align: justify;
+
+
+}
+
+
+.post_pic{
+
+	float: right;
+	margin-left: 15px;
+
+}

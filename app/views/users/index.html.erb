@@ -1,0 +1,12 @@
+<h1>Users Index</h1>
+
+ <% if flash[:success] %>
+    <div class="success"><%= flash[:success] %></div>
+  <% end %>
+
+<% @users.each do |user| %>
+<td><%= link_to (image_tag user.avatar.url(:lilguy)), user %></td>
+<li><%= link_to user.username, user %></li>
+<% end %>
+
+

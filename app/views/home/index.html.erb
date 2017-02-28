@@ -1,0 +1,43 @@
+<% if logged_in? %> 
+
+<div class="back_edit"><%= link_to 'New Post', new_post_path %></div>
+
+<% end %>
+
+<h1>Home Index (feed)</h1>
+
+ <% if flash[:deleted] %>
+	    <div class="deleted"><%= flash[:deleted] %></div>
+	  <% end %>
+
+
+<% if logged_in? %> 
+
+
+	
+
+	 <% if flash[:success] %>
+	    <div class="success"><%= flash[:success] %></div>
+	  <% end %>
+
+	  <% if flash[:notice] %>
+	    <div class="notice"><%= flash[:notice] %></div>
+	  <% end %>
+
+	<% @posts.reverse_each do |post| %>
+		<br>
+		<li><div class="second"><% if post.user == nil %>
+			    <%=  'User #' + post.user_id.to_s %>
+			    <% else %>
+			    <div class="feed_post"><%= link_to (image_tag post.user.avatar.url(:lilguy)),post.user %></div><span class="post_username"><%= link_to post.user.username, post.user %><%= post.updated_at.strftime("%d")+" "+post.updated_at.strftime("%b") %></span>
+			    	
+		  	<% end %>
+		  	<br>
+		<span class="post_title"><%= link_to post.title, post %></span></div></li>
+		<br>
+
+		<% end %>
+
+		</div>
+
+<% end %>
